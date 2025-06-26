@@ -17,6 +17,7 @@ function Users() {
             <h1 className="text-4xl font-semibold transition-text">
                All users
             </h1>
+
             <button
                onClick={() => setIsOpenModal((show) => !show)}
                className="bg-primary-0 p-2 rounded-md hover:bg-primary-50 border-2 border-primary-300 dark:bg-primary-800 dark:border-primary-500 dark:hover:bg-primary-900

@@ -6,7 +6,7 @@ function DashboardSkeleton() {
          initial={{ opacity: 0 }}
          animate={{ opacity: 1 }}
          transition={{ duration: 0.3 }}
-         className="grid grid-cols-4 grid-rows-[auto_20rem] gap-10 relative"
+         className="grid grid-cols-4 grid-rows-[auto_20rem] gap-6 relative"
       >
          <span className="absolute inset-0 m-0 bg-gradient-to-t z-10 from-primary-50 dark:from-primary-950" />
 

@@ -6,7 +6,7 @@ import { MdOutlineReadMore } from 'react-icons/md';
 import Table from '../../ui/Table';
 
 function ArchivedOrderRow({ order }) {
-   const { id: orderId, full_name, archived_at, cart: cartString } = order;
+   const { id, order_id, full_name, archived_at, cart: cartString } = order;
 
    const cart = JSON.parse(cartString);
    const dateStr = new Date(archived_at).toString().slice(4, 15);
@@ -18,7 +18,7 @@ function ArchivedOrderRow({ order }) {
          <Table.Row>
             <span></span>
 
-            <span>#{orderId}</span>
+            <span>#{order_id}</span>
 
             <span className="my-[1.6rem]">
                {dateFirstPart}, {dateSecondPart}
@@ -28,7 +28,7 @@ function ArchivedOrderRow({ order }) {
 
             <span>{formatCurrency(cart[0].orderTotal)}</span>
 
-            <Link to={`${orderId}`} className="w-min">
+            <Link to={`${id}`} className="w-min">
                <button className="p-2 hover:bg-primary-200 dark:hover:bg-primary-950 rounded-md cursor-pointer transition-text">
                   <MdOutlineReadMore />
                </button>

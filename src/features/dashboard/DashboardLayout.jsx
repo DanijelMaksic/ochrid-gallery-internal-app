@@ -17,7 +17,7 @@ function DashboardLayout() {
          initial={{ opacity: 0 }}
          animate={{ opacity: 1 }}
          transition={{ duration: 0.3 }}
-         className="grid grid-cols-4 grid-rows-[auto_20rem_auto] gap-10 pb-24"
+         className="grid grid-cols-4 grid-rows-[auto_20rem_auto] gap-6 pb-24"
       >
          <Stats archivedOrders={archivedOrders} />
          <TodayActivity />
