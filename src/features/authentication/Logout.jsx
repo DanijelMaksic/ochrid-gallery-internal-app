@@ -8,6 +8,8 @@ function Logout() {
    return (
       <button
          onClick={logout}
+         role="button"
+         aria-label="Log Out Button"
          className={`hover:bg-primary-100 dark:hover:bg-primary-900  p-2 rounded-lg transition-text ${
             isLoading ? 'pointer-events-none opacity-80' : ''
          }`}

@@ -32,6 +32,8 @@ function Header() {
 
          <div className="flex gap-1">
             <button
+               role="button"
+               aria-label="Light/Dark Mode Button"
                className="hover:bg-primary-100 dark:hover:bg-primary-900 p-2 rounded-lg transition-custom"
                onClick={toggleDarkMode}
             >
