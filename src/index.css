@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @theme {
@@ -38,8 +39,6 @@
    --color-toast_text: #46413a;
 
    --color-modal_shadow: #b39f8b;
-   /* --color-scrollbar_bar: #c2ae9a;
-   --color-scrollbar_bg: #fff; */
 }
 
 @layer base {
@@ -75,8 +74,6 @@
       --color-toast_text: #efe7dd;
 
       --color-modal_shadow: #1e1c1b;
-      /* --color-scrollbar_bar: #cfbda9;
-      --color-scrollbar_bg: #403b36; */
    }
 }
 
@@ -113,14 +110,14 @@ input:-webkit-autofill {
 }
 
 @layer components {
+   @keyframes pulse {
+      50% {
+         opacity: 0.5;
+      }
+   }
+
    .animate-skeleton {
       animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-
-      @keyframes pulse {
-         50% {
-            opacity: 0.5;
-         }
-      }
    }
 
    @keyframes rotation {
