@@ -13,7 +13,7 @@ function Table({ columns, children, data }) {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
             role="table"
-            className="rounded-lg border-2 border-primary-300 dark:border-primary-600 transition-custom mb-24"
+            className="rounded-lg border-2 border-primary-300 dark:border-primary-600 transition-custom mb-24 max-w-370"
          >
             {children}
          </motion.div>

@@ -2,6 +2,12 @@
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
+@custom-variant xl (@media (max-width: 1580px));
+@custom-variant lg (@media (max-width: 1024px));
+@custom-variant md (@media (max-width: 768px));
+@custom-variant sm (@media (max-width: 640px));
+@custom-variant xs (@media (max-width: 450px));
+
 @theme {
    --font-default: Ovo, serif;
    --font-logo: Rochester, serif;

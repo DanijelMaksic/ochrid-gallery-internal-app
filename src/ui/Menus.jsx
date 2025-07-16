@@ -19,7 +19,7 @@ function Menus({ children }) {
 }
 
 function Menu({ children }) {
-   return <div className="relative">{children}</div>;
+   return <div className="relative max-w-370">{children}</div>;
 }
 
 function Toggle({ id }) {

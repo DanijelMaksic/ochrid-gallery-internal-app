@@ -13,7 +13,7 @@ function UsersList() {
    if (isLoading) return <UsersSkeleton />;
 
    return (
-      <ul className="grid grid-cols-2 gap-12">
+      <ul className="grid grid-cols-2 gap-12 max-w-370">
          {users?.map((user) => (
             <UserRow user={user} key={user.id} />
          ))}

@@ -15,7 +15,7 @@ function Layout() {
       >
          <Header />
          <Sidebar />
-         <main className="px-12 py-8 bg-primary-50 dark:bg-primary-950 transition-custom overflow-auto remove-scrollbar">
+         <main className="px-32 xl:px-12 py-12 xl:py-8 bg-primary-50 dark:bg-primary-950 transition-custom overflow-auto remove-scrollbar">
             <motion.div
                initial={{ opacity: 0 }}
                animate={{ opacity: 1 }}

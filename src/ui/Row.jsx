@@ -9,7 +9,7 @@ function Row({ type, children }) {
          initial={{ opacity: 0 }}
          animate={{ opacity: 1 }}
          transition={{ duration: 0.3 }}
-         className={`flex ${
+         className={`flex max-w-370 ${
             type === 'horizontal' ? horizontalStyles : verticalStyles
          }`}
       >

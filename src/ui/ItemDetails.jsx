@@ -25,7 +25,7 @@ function ItemDetails({ item }) {
          initial={{ opacity: 0 }}
          animate={{ opacity: 1 }}
          transition={{ duration: 0.3 }}
-         className="grid grid-cols-2 gap-16"
+         className="grid grid-cols-2 gap-16 max-w-300"
       >
          <div className="flex items-center justify-center bg-primary-200 dark:bg-primary-700 rounded-lg overflow-hidden transition-custom border-2 border-primary-300 dark:border-primary-500">
             <img
