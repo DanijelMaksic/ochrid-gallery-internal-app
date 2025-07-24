@@ -1,3 +1,3 @@
-# Ochrid Gallery Internal App
+# Ochrid Gallery CMS
 
 Portfolio project
