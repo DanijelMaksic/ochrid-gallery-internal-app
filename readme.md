@@ -1,3 +1,8 @@
 # Ochrid Gallery CMS
 
-Portfolio project
+Installation:
+
+```
+npm i
+npm run dev
+```
