@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { formatCurrency } from '../utils/helpers';
 import { useReviews } from '../features/items/useReviews';
-import { useWishlists } from '../features/dashboard/useWishlists';
+import { useWishlists } from '../features/items/useWishlists';
 
 import ItemDetailSkeleton from './skeletons/ItemDetailSkeleton';
 
@@ -12,10 +12,9 @@ function ItemDetails({ item }) {
 
    if (isLoading || isLoading2) return <ItemDetailSkeleton type="secondary" />;
 
-   // Calculating WISHLISTS
-   const wishlistsParsed = wishlists.map((item) => JSON.parse(item.wishlist));
-   const wishlistsFlat = wishlistsParsed.flat();
-   const itemWishlists = wishlistsFlat.filter((wishlist) => wishlist === id);
+   const itemWishlists = wishlists.filter(
+      (wishlist) => wishlist.item_id === id
+   );
 
    // Calculating REVIEWS
    const itemReviews = reviews.filter((review) => review.item_id === id);

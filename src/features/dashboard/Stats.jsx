@@ -1,5 +1,5 @@
 import { TbHeartPlus } from 'react-icons/tb';
-import { useWishlists } from './useWishlists';
+import { useWishlistCount } from './useWishlistCount';
 import { HiOutlineChartBar } from 'react-icons/hi';
 import { formatCurrency } from '../../utils/helpers';
 import { HiOutlineBanknotes } from 'react-icons/hi2';
@@ -11,7 +11,7 @@ import Stat from './Stat';
 
 function Stats({ archivedOrders }) {
    const { reviews, isLoading } = useRecentReviews();
-   const { wishlists, isLoading2 } = useWishlists();
+   const { wishlistCount, isLoading2 } = useWishlistCount();
 
    if (isLoading || isLoading2)
       return (
@@ -40,11 +40,6 @@ function Stats({ archivedOrders }) {
       cartQuantitiesArr = carts.flat().map((item) => item.cartQuantity);
       itemsSold = cartQuantitiesArr.reduce((acc, cur) => acc + cur, 0);
    }
-
-   // Calculating WISHLISTS
-   const wishlistsParsed = wishlists.map((item) => JSON.parse(item.wishlist));
-
-   const wishlistsFlat = wishlistsParsed.flat();
 
    return (
       <>
@@ -81,7 +76,7 @@ function Stats({ archivedOrders }) {
             icon={
                <TbHeartPlus className="text-3xl text-[#a74043] dark:text-[#FBDBE0]" />
             }
-            value={wishlistsFlat.length}
+            value={wishlistCount}
          />
 
          <Stat
