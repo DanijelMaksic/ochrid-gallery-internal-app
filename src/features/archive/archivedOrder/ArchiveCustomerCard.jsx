@@ -1,7 +1,7 @@
 function ArchiveCustomerCard({ archivedOrder }) {
    const {
       full_name,
-      adress,
+      address,
       email,
       city,
       post_code,
@@ -24,7 +24,7 @@ function ArchiveCustomerCard({ archivedOrder }) {
             <h3 className="text-3xl mt-3">Shipping Details</h3>
 
             <div className="flex flex-col gap-1 text-primary-800 dark:text-primary-200">
-               <span>{adress}</span>
+               <span>{address}</span>
                <span>
                   {city} {post_code}
                </span>

@@ -69,7 +69,7 @@ function SignUpForm({ onClose }) {
                   required: 'This field is required',
                   validate: (value) =>
                      value.includes('@') ||
-                     'Email adress needs to contain @ symbol',
+                     'Email address needs to contain @ symbol',
                })}
                className={inputStyle}
             />
